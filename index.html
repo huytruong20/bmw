@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW M4 Competition | Engineering Showcase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader-content">
+            <div class="loader-ring"></div>
+            <div class="loader-text">BMW M4</div>
+            <div class="loader-sub">Loading 3D Model</div>
+            <div id="loading-progress" class="loader-progress">0%</div>
+            <div class="loader-bar-track">
+                <div class="loader-bar-fill" id="loader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <header id="header">
+        <div class="logo">
+            <span class="logo-bmw">BMW</span>
+            <span class="logo-divider"></span>
+            <span class="logo-model">M4 Competition</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#" class="nav-link active">Explore</a>
+            <a href="#" class="nav-link">Specifications</a>
+            <a href="#" class="nav-link">Gallery</a>
+        </nav>
+    </header>
+
+    <div id="canvas-container"></div>
+
+    <div id="info-panel">
+        <div class="info-tag">Component</div>
+        <div class="info-name" id="part-name"></div>
+        <div class="info-desc" id="part-desc"></div>
+        <div class="info-specs" id="part-specs"></div>
+    </div>
+
+    <div id="instructions">
+        <span>Drag to rotate &bull; Scroll to zoom &bull; Hover parts for details</span>
+    </div>
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+        }
+    }
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
