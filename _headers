@@ -1,0 +1,9 @@
+/*.glb
+  Content-Type: model/gltf-binary
+  Access-Control-Allow-Origin: *
+
+/*.js
+  Content-Type: application/javascript; charset=utf-8
+
+/*.css
+  Content-Type: text/css; charset=utf-8
